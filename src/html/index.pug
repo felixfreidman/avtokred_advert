@@ -1,0 +1,91 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="./assets/images/content/logoRed.svg", type="image/x-icon")
+        link(rel="stylesheet", href="./style.min.css")
+        title Автокред - посадка
+    body 
+        header.header
+            .navigation
+                a(href='#toCalc').navigation-link Калькулятор
+                a(href='#toBanks').navigation-link Банки-партнеры
+                a(href='#toFeedback').navigation-link Отзывы
+            .button.apply-button Задать вопрос
+        main.main 
+            .main--greeting.greeting-parent 
+                .greeting-parent__header
+                    | Сядь в Собственное авто
+                    br
+                    span.greeting-parent__header--red уже через 1 час
+                .greeting-parent__subheader Автокредит в Иркутске 
+                    <span class="ityped"></span>
+                .greeting-parent__button Подать заявку
+                .greeting-parent__caption Не является публичной офертой. Услуга предоставляется ООО Автокредит. Не является кредитной организацией. Автокредит предоставляется банками партнерами: ПАО РОСБАНК, Генеральная лицензия №2272 от 28.01.15 ООО Сетелем Банк лицензии Банка России № 2168 от 27 июня 2013 г. (бессрочные) ПАО «БыстроБанк» Лицензия Банка России №1745 ПАО «РГС Банк» Лицензия ЦБ РФ 3073 КБ"ЛОКО-Банк"(АО) Лицензия Банка России №2707. Полный список банков-парнеров уточняйте у операторов по телефону 8-800-600-25-15
+            .main--feedback.feedback-parent 
+                .feedback-parent__header 
+                    | Не верится, что 
+                    span.feedback-parent__header--red все так просто и быстро?
+                .feedback-parent__subheader Смотрите реальные отзывы от земляков
+                .feedback-parent__swiper#toFeedback
+                    .swiper#feedbackSwiper
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                .feedback-parent__circle 
+                                    .feedback-parent__container(style='background-image: url("./assets/images/content/background.jpg")')
+                            .swiper-slide 
+                                .feedback-parent__circle 
+                                    .feedback-parent__container(style='background-image: url("./assets/images/content/background.jpg")')
+                            .swiper-slide 
+                                .feedback-parent__circle 
+                                    .feedback-parent__container(style='background-image: url("./assets/images/content/background.jpg")')
+                            .swiper-slide 
+                                .feedback-parent__circle 
+                                    .feedback-parent__container(style='background-image: url("./assets/images/content/background.jpg")')
+                            .swiper-slide 
+                                .feedback-parent__circle 
+                                    .feedback-parent__container(style='background-image: url("./assets/images/content/background.jpg")')
+                .feedback-parent__subheader Уже сделали счастливыми более 3000+ автовладельцев
+                .feedback-parent__button Купить авто
+            .main--feedback.feedback-parent 
+                .feedback-parent__header 
+                    | Только топовые бани 
+                    br
+                    span.feedback-parent__header--red в сфере атокредитования
+                .feedback-parent__swiper#toBanks
+                    .swiper#banksSwiper
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                .feedback-parent__box(style='background-image: url("./assets/images/content/background.jpg")')
+                            .swiper-slide 
+                                .feedback-parent__box(style='background-image: url("./assets/images/content/background.jpg")')
+                            .swiper-slide  
+                                .feedback-parent__box(style='background-image: url("./assets/images/content/background.jpg")')
+                            .swiper-slide 
+                                .feedback-parent__box(style='background-image: url("./assets/images/content/background.jpg")')
+                            .swiper-slide 
+                                .feedback-parent__box(style='background-image: url("./assets/images/content/background.jpg")')
+                .feedback-parent__button Выбрать банк
+            .main--question.question-parent
+                .question-parent__header 
+                    | Остались вопросы? 
+                    br
+                    span.question-parent__header--red Получите бесплатную консультацию
+                .question-parent__subheader Узнайте все об условиях автокредитования в вашем городе на сегодняшний день
+                .question-parent__button Заявка на звонок
+            .main--privacy.privacy-parent
+                .privacy-parent__link Политика конфиденциальности
+            .main--footer.footer-parent
+                .footer-parent__line © ООО "Автокредит", 2017-2022. Все права защищены
+                .footer-parent__line ИНН: 0301201060 ОГРН: 1160327065315
+
+
+  
+</div>
+        footer.footer
+        script(src="./assets/js/jquery.min.js") 
+        script(src="./assets/js/plugins.min.js") 
+        script(src="https://unpkg.com/ityped@0.0.10")
+        script(src="./assets/js/main.min.js") 
