@@ -5,11 +5,16 @@
 }
 
 body {
-    font-family: "Montserrat";
+    font-family: "Subheader";
+    font-weight: 500;
     cursor: default;
     width: 100vw;
     overflow-x: hidden;
     height: fit-content;
+    background-image: url(./assets/images/content/background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0% 1px;
 }
 
 .header {
@@ -28,9 +33,8 @@ body {
 
         .navigation-link {
             color: #737373;
-            font-weight: 600;
+            font-weight: 500;
             text-decoration: none;
-            font-family: "Montserrat";
             margin-right: 20px;
             transition: all 0.3s ease;
 
@@ -42,12 +46,15 @@ body {
 
     .button {
         background: #e32429;
-        padding: 10px 30px;
+        padding: 15px 30px;
         font-weight: 600;
         color: #fff;
         font-size: 18px;
         border-radius: 8px;
         transition: all 0.3s ease;
+        font-family: "Subheader";
+
+        box-shadow: 0px 4px 1px 0px rgba(2, 7, 11, 0.5);
 
         &:hover {
             box-shadow: 4px 4px 8px 0px rgba(2, 7, 11, 0.2);
@@ -66,9 +73,6 @@ body {
         padding: 180px 70px 0;
         height: calc(100vh);
         width: calc(100%);
-        background-image: url(./assets/images/content/background.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
 
     }
 
@@ -79,10 +83,11 @@ body {
         &__header {
             font-size: 64px;
             color: #212121;
-            font-weight: 900;
+            font-weight: 600;
             text-transform: uppercase;
             line-height: 76px;
             margin-bottom: 10px;
+            font-family: "Header";
 
             &--red {
                 color: #e32429;
@@ -97,6 +102,7 @@ body {
 
             .ityped {
                 color: #212121;
+                border-bottom: 3px dashed #212121;
             }
 
             .ityped-cursor {
@@ -106,13 +112,16 @@ body {
 
         &__button {
             background: #e32429;
-            padding: 20px 60px;
-            font-weight: 700;
+            padding: 20px 80px;
+            font-weight: 600;
             color: #fff;
             font-size: 22px;
             border-radius: 8px;
             transition: all 0.3s ease;
             width: fit-content;
+            font-family: "Header";
+
+            box-shadow: 0px 4px 1px 0px rgba(2, 7, 11, 0.5);
 
             &:hover {
                 box-shadow: 4px 4px 8px 0px rgba(2, 7, 11, 0.2);
@@ -146,12 +155,13 @@ body {
         &__header {
             font-size: 44px;
             color: #212121;
-            font-weight: 700;
+            font-weight: 600;
             text-transform: uppercase;
             line-height: 56px;
             margin-bottom: 20px;
             width: 60%;
             text-align: center;
+            font-family: "Header";
 
             &--red {
                 color: #e32429;
@@ -160,21 +170,25 @@ body {
 
         &__subheader {
             font-size: 16px;
-            line-height: 28px;
+            line-height: 22px;
             color: #737373;
             font-weight: 500;
+            width: 30%;
+            text-align: center;
         }
 
         &__button {
             background: #e32429;
-            padding: 20px 60px;
-            font-weight: 700;
+            padding: 20px 80px;
+            font-weight: 600;
             color: #fff;
-            font-size: 22px;
+            font-size: 24px;
             border-radius: 8px;
             transition: all 0.3s ease;
             width: fit-content;
-            margin-top: 40px;
+            margin-top: 30px;
+            font-family: "Header";
+            box-shadow: 0px 4px 1px 0px rgba(2, 7, 11, 0.5);
 
             &:hover {
                 box-shadow: 4px 4px 8px 0px rgba(2, 7, 11, 0.2);
@@ -230,7 +244,7 @@ body {
     }
 
     &--question {
-        padding: 180px 70px 40px;
+        padding: 60px 70px 60px;
         width: calc(100%);
         margin-top: 40px;
     }
@@ -245,12 +259,13 @@ body {
         &__header {
             font-size: 44px;
             color: #212121;
-            font-weight: 700;
+            font-weight: 600;
             text-transform: uppercase;
             line-height: 56px;
             margin-bottom: 20px;
             width: 60%;
             text-align: left;
+            font-family: "Header";
 
             &--red {
                 color: #e32429;
@@ -258,10 +273,11 @@ body {
         }
 
         &__subheader {
-            font-size: 16px;
-            line-height: 28px;
+            font-size: 18px;
+            line-height: 24px;
             color: #737373;
             font-weight: 500;
+            width: 40%;
         }
 
         &__button {
@@ -274,6 +290,8 @@ body {
             transition: all 0.3s ease;
             width: fit-content;
             margin-top: 40px;
+            font-family: "Header";
+            box-shadow: 0px 4px 1px 0px rgba(2, 7, 11, 0.5);
 
             &:hover {
                 box-shadow: 4px 4px 8px 0px rgba(2, 7, 11, 0.2);
